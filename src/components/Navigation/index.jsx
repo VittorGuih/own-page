@@ -1,14 +1,18 @@
 import React from 'react';
+import { Container } from '../Container';
 import { Items } from './Items';
+import { Navbar } from './style';
 
-export function Header() {
+export function Navigation() {
   let meuLinkedin = 'https://google.com.br';
   return (
     <>
-      <header>
+      <Navbar>
         {/* Nao vou utilizar a tag NAV, ja que o link aqui contido e externo. */}
-        <Items meuLinkedin={meuLinkedin} />
-      </header>
+        <Container>
+          <Items meuLinkedin={meuLinkedin} />
+        </Container>
+      </Navbar>
     </>
   );
 }
