@@ -11,13 +11,16 @@ import {
   FooterIcons,
 } from './style';
 
-export function Content() {
+export function Content({ linkedin_link, github_link }) {
   return (
     <MainContent>
       <Container>
         <article>
           <ImageContent>
-            <img src={mainBanner} alt='main-banner' />
+            <img
+              src={mainBanner}
+              alt='banner com garoto segurando um pincel de pintura olhando para uma tela de computador (ilustrativa)'
+            />
           </ImageContent>
           <Description>
             <h2>Olá!</h2>
@@ -28,11 +31,21 @@ export function Content() {
             </p>
           </Description>
           <FooterIcons>
-            <SocialIcon>
-              <img src={linkedin} alt='' />
+            <SocialIcon
+              href={linkedin_link}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Ir para o pefil linkedin do Vittor Guilherme (Será aberto em outra aba)'
+            >
+              <img src={linkedin} role='presentation' />
             </SocialIcon>
-            <SocialIcon>
-              <img src={github} alt='' />
+            <SocialIcon
+              href={github_link}
+              target='_blank'
+              rel='noopener noreferrer'
+              aria-label='Ir para o pefil github do Vittor Guilherme (Será aberto em outra aba)'
+            >
+              <img src={github} alt='' role='presentation' />
             </SocialIcon>
           </FooterIcons>
         </article>

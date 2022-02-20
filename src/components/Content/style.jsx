@@ -39,7 +39,7 @@ export const Description = styled.div`
   }
 `;
 
-export const SocialIcon = styled.span`
+export const SocialIcon = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,6 +48,7 @@ export const SocialIcon = styled.span`
   height: 99px;
   border-radius: 50%;
   background-color: #e6e7ff;
+  overflow: hidden;
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 `;
 export const FooterIcons = styled.footer`

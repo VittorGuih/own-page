@@ -3,7 +3,7 @@ import { Link } from './style';
 
 export function Item({ meuLinkedin }) {
   return (
-    <Link href={meuLinkedin} rel='noreferrer noopener'>
+    <Link href={meuLinkedin}>
       <svg
         width='13'
         height='13'
