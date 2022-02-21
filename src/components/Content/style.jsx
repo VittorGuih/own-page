@@ -9,6 +9,8 @@ export const ImageContent = styled.figure`
   display: flex;
   min-width: 320px;
   max-width: 600px;
+  min-height: 325;
+  height: 100%;
   width: 65%;
 
   > img {

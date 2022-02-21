@@ -40,9 +40,10 @@ export function Content({ linkedin_link, github_link }) {
               aria-label='Ir para o pefil linkedin do Vittor Guilherme (Será aberto em outra aba)'
             >
               <img
-                width='100%'
-                height='100%'
+                width='44'
+                height='40'
                 src={linkedin}
+                alt=''
                 role='presentation'
               />
             </SocialIcon>
@@ -53,8 +54,8 @@ export function Content({ linkedin_link, github_link }) {
               aria-label='Ir para o pefil github do Vittor Guilherme (Será aberto em outra aba)'
             >
               <img
-                width='100%'
-                height='100%'
+                width='44'
+                height='40'
                 src={github}
                 alt=''
                 role='presentation'
