@@ -39,6 +39,7 @@ export function Content({ linkedin_link, github_link }) {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Ir para o pefil linkedin do Vittor Guilherme (Será aberto em outra aba)'
+              title='Ir ao linkedin'
             >
               <img
                 width='44'
@@ -53,6 +54,7 @@ export function Content({ linkedin_link, github_link }) {
               target='_blank'
               rel='noopener noreferrer'
               aria-label='Ir para o pefil github do Vittor Guilherme (Será aberto em outra aba)'
+              title='Ir ao github'
             >
               <img
                 width='44'

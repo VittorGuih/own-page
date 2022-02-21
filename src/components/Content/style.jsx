@@ -16,7 +16,7 @@ export const ImageContent = styled.figure`
   max-width: 600px;
   min-height: 325px;
   height: 100%;
-  width: 65%;
+  width: 60%;
   grid-column-start: 1;
   grid-column-end: 5;
 

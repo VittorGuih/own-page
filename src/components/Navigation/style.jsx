@@ -25,7 +25,12 @@ export const Link = styled.a`
   @media (${breakpoint.for_mobile_up}) {
     font-size: 18px;
   }
-
+  @media (${breakpoint.for_tablet_up}) {
+    > svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
   &:hover {
     text-decoration: none;
   }
