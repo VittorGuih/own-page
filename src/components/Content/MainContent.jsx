@@ -18,6 +18,8 @@ export function Content({ linkedin_link, github_link }) {
         <article>
           <ImageContent>
             <img
+              width='100%'
+              height='100%'
               src={mainBanner}
               alt='banner com garoto segurando um pincel de pintura olhando para uma tela de computador (ilustrativa)'
             />
@@ -37,7 +39,12 @@ export function Content({ linkedin_link, github_link }) {
               rel='noopener noreferrer'
               aria-label='Ir para o pefil linkedin do Vittor Guilherme (Será aberto em outra aba)'
             >
-              <img src={linkedin} role='presentation' />
+              <img
+                width='100%'
+                height='100%'
+                src={linkedin}
+                role='presentation'
+              />
             </SocialIcon>
             <SocialIcon
               href={github_link}
@@ -45,7 +52,13 @@ export function Content({ linkedin_link, github_link }) {
               rel='noopener noreferrer'
               aria-label='Ir para o pefil github do Vittor Guilherme (Será aberto em outra aba)'
             >
-              <img src={github} alt='' role='presentation' />
+              <img
+                width='100%'
+                height='100%'
+                src={github}
+                alt=''
+                role='presentation'
+              />
             </SocialIcon>
           </FooterIcons>
         </article>

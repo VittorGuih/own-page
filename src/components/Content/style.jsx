@@ -35,7 +35,7 @@ export const Description = styled.div`
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
-    color: #8e9aaf;
+    color: #4d6ea8;
   }
 `;
 

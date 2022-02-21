@@ -5,7 +5,9 @@ import { List } from './style';
 export function Items({ meuLinkedin }) {
   return (
     <List>
-      <Item meuLinkedin={meuLinkedin} />
+      <li>
+        <Item meuLinkedin={meuLinkedin} />
+      </li>
     </List>
   );
 }
