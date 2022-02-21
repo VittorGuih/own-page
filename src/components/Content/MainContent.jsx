@@ -9,13 +9,14 @@ import {
   Description,
   SocialIcon,
   FooterIcons,
+  GridContent,
 } from './style';
 
 export function Content({ linkedin_link, github_link }) {
   return (
     <MainContent>
       <Container>
-        <article>
+        <GridContent>
           <ImageContent>
             <img
               width='100%'
@@ -62,7 +63,7 @@ export function Content({ linkedin_link, github_link }) {
               />
             </SocialIcon>
           </FooterIcons>
-        </article>
+        </GridContent>
       </Container>
     </MainContent>
   );

@@ -1,7 +1,12 @@
 import styled from 'styled-components';
+import { breakpoint } from '../Global/breakpt';
 
 export const MainContent = styled.main`
   margin: 0 16px 40px 16px;
+
+  @media (${breakpoint.for_mobile_up}) {
+    margin-top: 48px;
+  }
 `;
 
 export const ImageContent = styled.figure`
@@ -9,17 +14,36 @@ export const ImageContent = styled.figure`
   display: flex;
   min-width: 320px;
   max-width: 600px;
-  min-height: 325;
+  min-height: 325px;
   height: 100%;
   width: 65%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  @media (${breakpoint.for_tablet_up}) {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    width: 85%;
+  }
 
   > img {
     width: 100%;
+    height: 100%;
   }
 `;
 export const Description = styled.div`
   margin-top: 40px;
   color: #03045e;
+
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  @media (${breakpoint.for_tablet_up}) {
+    grid-column-end: 3;
+    order: -1;
+    align-self: center;
+  }
+
   > h2 {
     font-weight: 800;
     font-size: 42px;
@@ -58,4 +82,15 @@ export const FooterIcons = styled.footer`
   justify-content: space-evenly;
   align-items: center;
   margin-top: 40px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+
+  @media (${breakpoint.for_tablet_up}) {
+    margin-top: -40px;
+    grid-column-end: 3;
+  }
+`;
+export const GridContent = styled.article`
+  display: grid;
+  grid-template-columns: auto auto auto;
 `;
